@@ -28,4 +28,6 @@ public class Pilot extends Person {
     public void setLicenceNumber(String licenceNumber) {
         this.licenceNumber = licenceNumber;
     }
+
+    public String canFly() { return "I'm Flying!";}
 }

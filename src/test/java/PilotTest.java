@@ -18,4 +18,16 @@ public class PilotTest {
     public void hasName(){
         assertEquals("Captain Jack", pilot.getName());
     }
+    @Test
+    public void hasRank(){
+        assertEquals("First Officer", pilot.getRank());
+    }
+    @Test
+    public void hasLicenceNumber(){
+        assertEquals("LI123456",pilot.getLicenceNumber());
+    }
+    @Test
+    public void canFly(){
+        assertEquals("I'm Flying!",pilot.canFly());
+    }
 }
