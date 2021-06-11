@@ -92,11 +92,14 @@ public class Flight {
         this.departureTime = departureTime;
     }
 
-    public void addPassenger() {
-       this.bookedPassengers.add(passenger);
-
 
     }
-}
+
+//    public void addPassenger() {
+//       this.bookedPassengers.add(passenger);
+
+
+
+
 
 

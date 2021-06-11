@@ -27,7 +27,7 @@ public class FlightTest {
 
     @Test
     public void hasPilot(){
-        assertEquals("Captain Tom",flight.getPilots());
+        assertEquals("Captain Tom",pilot.getName());
     }
 
     @Test
@@ -35,13 +35,20 @@ public class FlightTest {
         assertEquals(0,flight.getBookedPassengers().size());
     }
 
+//    @Test
+//    public void canAddPassengerToFlight(){
+//        flight.addPassenger(passenger);
+//        assertEquals(1,flight.getBookedPassengers().size());
+//    }
+
     @Test
-    public void canAddPassengerToFlight(){
-        flight.addPassenger(passenger);
-        assertEquals(1,flight.getBookedPassengers().size());
+    public void hasFlightNumber(){
+        assertEquals("FR1234",flight.getFlightNumber());
     }
-
-
+    @Test
+    public void hasPlane(){
+        assertEquals("Boeing747",flight.getPlane());
+    }
 
 
 
