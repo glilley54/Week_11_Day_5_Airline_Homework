@@ -91,6 +91,12 @@ public class Flight {
     public void setDepartureTime(String departureTime) {
         this.departureTime = departureTime;
     }
+
+    public void addPassenger() {
+       this.bookedPassengers.add(passenger);
+
+
+    }
 }
 
 

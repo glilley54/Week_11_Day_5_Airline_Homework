@@ -27,12 +27,18 @@ public class FlightTest {
 
     @Test
     public void hasPilot(){
-        assertEquals("Captain Tom",pilot.getName());
+        assertEquals("Captain Tom",flight.getPilots());
     }
 
     @Test
     public void flightStartsWithoutAnyPassengers(){
         assertEquals(0,flight.getBookedPassengers().size());
+    }
+
+    @Test
+    public void canAddPassengerToFlight(){
+        flight.addPassenger(passenger);
+        assertEquals(1,flight.getBookedPassengers().size());
     }
 
 
