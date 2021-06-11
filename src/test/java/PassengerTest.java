@@ -15,8 +15,12 @@ public class PassengerTest {
     }
 
     @Test
-    public void PassengerhasName() {
+    public void hasName() {
         assertEquals("Gordon Lilley", passenger.getName());
+    }
 
+    @Test
+    public void hasBags(){
+        assertEquals(2,passenger.getNumberOfBags());
     }
 }
