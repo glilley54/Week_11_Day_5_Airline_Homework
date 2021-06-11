@@ -17,10 +17,10 @@ public class Flight {
     private String departureAirport;
     private String departureTime;
 
-    public Flight(ArrayList<Pilot> pilots, ArrayList<CabinCrewMember> cabinCrewMembers, ArrayList<Passenger> bookedPassengers, Plane plane, String flightNumber, String destination, String departureAirport, String departureTime) {
+    public Flight(Plane plane, String flightNumber,String destination, String departureAirport, String departureTime) {
         this.pilots = pilots;
-        this.cabinCrewMembers = cabinCrewMembers;
-        this.bookedPassengers = bookedPassengers;
+        this.cabinCrewMembers = new ArrayList<CabinCrewMember>();
+        this.bookedPassengers = new ArrayList<Passenger>();
         this.plane = plane;
         this.flightNumber = flightNumber;
         this.destination = destination;
