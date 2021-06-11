@@ -1,6 +1,6 @@
 package people;
 
-import javax.swing.*;
+
 
 public class Pilot extends Person {
 
