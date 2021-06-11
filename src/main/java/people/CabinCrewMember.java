@@ -1,6 +1,6 @@
 package people;
 
-public class CabinCrewMember extends Person{
+public class CabinCrewMember extends Person {
 
     private String rank;
 
@@ -15,5 +15,9 @@ public class CabinCrewMember extends Person{
 
     public void setRank(String rank) {
         this.rank = rank;
+    }
+
+    public String speak() {
+        return ("Hi passengers");
     }
 }
