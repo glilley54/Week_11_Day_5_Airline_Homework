@@ -7,7 +7,7 @@ public class Pilot extends Person {
     private String rank;
     private String licenceNumber;
 
-    public Pilot(String name, String rank) {
+    public Pilot(String name, String rank,String licenceNumber) {
         super(name);
         this.rank = rank;
         this.licenceNumber = licenceNumber;

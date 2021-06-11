@@ -4,6 +4,7 @@ package people;
 
 public class Passenger extends Person{
 
+    private final int numberofBags;
     private int numberOfBags;
 
     public Passenger(String name,int numberOfBags) {
