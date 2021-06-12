@@ -52,8 +52,8 @@ public class Flight {
         this.bookedPassengers = bookedPassengers;
     }
 
-    public Plane getPlane() {
-        return plane;
+    public Plane getPlane(Plane plane) {
+        return this.plane;
     }
 
     public void setPlane(Plane plane) {
@@ -92,6 +92,10 @@ public class Flight {
         this.departureTime = departureTime;
     }
 
+
+    public void bookPassenger(Passenger passenger) {
+        this.bookedPassengers.add(passenger);
+    }
 
     }
 

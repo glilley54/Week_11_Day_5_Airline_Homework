@@ -35,21 +35,33 @@ public class FlightTest {
         assertEquals(0,flight.getBookedPassengers().size());
     }
 
-//    @Test
-//    public void canAddPassengerToFlight(){
-//        flight.addPassenger(passenger);
-//        assertEquals(1,flight.getBookedPassengers().size());
-//    }
+    @Test
+    public void canAddPassengerToFlight(){
+        flight.bookPassenger(passenger);
+        assertEquals(1,flight.getBookedPassengers().size());
+    }
 
     @Test
     public void hasFlightNumber(){
         assertEquals("FR1234",flight.getFlightNumber());
     }
+
     @Test
-    public void hasPlane(){
-        assertEquals("Boeing747",flight.getPlane());
+    public void hasPlane() {
+        assertEquals("Boeing747", flight.getPlane(plane));
+
+    }
+    @Test
+    public void hasDepartureAirport() {
+        assertEquals("Edinburgh", flight.getDepartureAirport());
     }
 
-
-
+    @Test
+    public void hasDestination() {
+        assertEquals("Barcelona",flight.getDestination());
+    }
+    @Test
+    public void hasdepartureTime() {
+        assertEquals("18.00",flight.getDepartureTime());
+    }
 }
