@@ -65,9 +65,14 @@ public class FlightTest {
         assertEquals("18.00",flight.getDepartureTime());
     }
     @Test
-    public void canReturnAvailableSeats(){
-        assertEquals(140,plane.getCapcity());
-
-
+    public void canReturnAvailableSeats() {
+        assertEquals(140, plane.getCapcity());
     }
-}
+
+    @Test
+    public void planeHasTotalWeight(){
+        assertEquals(2000, plane.getTotalWeight());
+
+        }
+    }
+
