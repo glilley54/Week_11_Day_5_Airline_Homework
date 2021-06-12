@@ -20,7 +20,7 @@ public class Plane {
         this.type = type;
     }
 
-    public int getCapcity() {
+    public int getCapacity() {
         return capacity;
     }
 

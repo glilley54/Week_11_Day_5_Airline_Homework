@@ -66,7 +66,7 @@ public class FlightTest {
     }
     @Test
     public void canReturnAvailableSeats() {
-        assertEquals(140, plane.getCapcity());
+        assertEquals(140, plane.getCapacity());
     }
 
     @Test
