@@ -47,8 +47,8 @@ public class FlightTest {
     }
 
     @Test
-    public void hasPlane() {
-        assertEquals("Boeing747", flight.getPlane(plane));
+    public void hasPlaneType() {
+        assertEquals("Boeing747", plane.getType());
 
     }
     @Test
@@ -63,5 +63,11 @@ public class FlightTest {
     @Test
     public void hasdepartureTime() {
         assertEquals("18.00",flight.getDepartureTime());
+    }
+    @Test
+    public void canReturnAvailableSeats(){
+        assertEquals(140,plane.getCapcity());
+
+
     }
 }
